@@ -96,7 +96,7 @@ const CryptoSection = (props: CryptoSectionProps) => {
   const verifyButton = useMemo(() => {
     return (
       <Button color="secondary" onClick={verifyWallet} type="button" id="hasToken" name="hasToken">
-        <img className="mr-1 h-5" src="/integrations/metamask.svg" />
+        <img className="mr-1 h-5" src="/apps/metamask.svg" />
         {t("verify_wallet")}
       </Button>
     );
@@ -105,7 +105,7 @@ const CryptoSection = (props: CryptoSectionProps) => {
   const connectButton = useMemo(() => {
     return (
       <Button color="secondary" onClick={connectMetamask} type="button">
-        <img className="mr-1 h-5" src="/integrations/metamask.svg" />
+        <img className="mr-1 h-5" src="/apps/metamask.svg" />
         {t("connect_metamask")}
       </Button>
     );
@@ -120,7 +120,7 @@ const CryptoSection = (props: CryptoSectionProps) => {
           await connectMetamask();
           await verifyWallet();
         }}>
-        <img className="mr-1 h-5" src="/integrations/metamask.svg" />
+        <img className="mr-1 h-5" src="/apps/metamask.svg" />
         {t("verify_wallet")}
       </Button>
     );
